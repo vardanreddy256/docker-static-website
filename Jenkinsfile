@@ -3,13 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                echo 'Pulling code from GitHub'
-                git 'https://github.com/vardanreddy256/docker-static-website.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker Image'
@@ -33,4 +26,4 @@ pipeline {
         }
 
     }
-}
+}            
